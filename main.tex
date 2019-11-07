@@ -5,32 +5,188 @@
 \author{Jeremy Amin}
 \date{November 2019}
 
+%\pagestyle{plain}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{J. Amin - 42107881}
+\lhead{FOAR705 - Supervisor Feedback PoC}
+\lfoot{Session 2, 2019 - Macquarie University}
+\rfoot{\thepage}
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\usepackage{hyperref}
+
 \begin{document}
 
 \maketitle
+\tableofcontents
 
 \section{Introduction}
 
 This document is my new PoC. My plan is to create a workflow which allows me to receive supervisor feedback in a version controlled location, implement said feedback, and then send a report to my supervisor demonstrating that I have implemented their feedback.
 
-\section{A Day in the Life}
+\section{Scoping I}
+
+\subsection{A Day in the Life: Feedback from my supervisor on the written component of my thesis}
 
 I need to:
+\begin{itemize}
+    \item Have the meeting with my supervisor and record their feedback on my progress.
+    \item Make sure I record important actionable feedback in such a way that it is easily understood by myself and them at a later date.
+    \item Save the feedback in a version controlled format which I will not lose even if my computer crashes.
+    \item Implement their feedback and record it precisely so that I can demonstrate that I have met their demands/suggestions.
+    \item Send the implemented actions to my supervisor in an easy to use format for them. (Probably .txt, .docx, or .pdf)
+    \item Just in case there is a contradiction between their initial feedback and my appropriate implementation of said feedback, I will have a copy of what they have suggested ready to hand.
+    \item Just in case they wish to see precisely what I have changed, I will have a specific 
+\end{itemize}
+
+\subsection{\textit {Pains} and pain relievers}
+
+\begin{itemize}
+    \item \textit{Pain 1: Manually searching through my document(s) to find the specific alteration(s) I have made.} 
+    \begin{itemize}
+        \item  Reliever: Having a version controlled system in place which enables me to have a history of my alterations as well as an easy way to compare older versions of what I have written to compare with the updated text based on supervisor feedback. 
+    \end{itemize}
+    \item \textit{Pain 2: Demonstrating precisely why my alteration is better than the previous version.} 
+    \begin{itemize}
+        \item  Reliever 1: A set of themed repositories and folders which enable me to search for my feedback based alterations based on: Date of feedback, time and date feedback was implemented, section of thesis, page number.
+        \begin{itemize}
+        \item Reliever 1.1: Being able to compare the current version of a section of text with its older versions. I would then send the relevant versions to my supervisor so they can see the precise alterations I made and see how the alterations satisfy their feedback.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{\textit {Gains} and gain creators}
+
+\section{Scoping II: Computational Analysis}
+
+\subsection{Instructions}
+Using elements of ‘computational thinking’, consider the pains, gains, and solutions you identified during BA. Translate them into a form that can (at least in part) be addressed by computers. To do so, consider these steps:
+\begin{itemize}
+    \item Decomposition:Breaking down data, processes, or problems into smaller, manageable parts
+    \item Pattern Recognition:Observing patterns, trends, and regularities in data.
+    \item Algorithm Design:Developing the step by step instructions for solving this and similar problems
+\end{itemize}
+First (and most important), decompose the activities that involve ‘pains’, opportunities for ‘gains’, and any solutions you proposed into small parts and/or discrete steps. Next (if possible), identify patterns in the problems you are trying to solve or the solutions you are proposing. Finally, revise the solutions you developed during Business Analysis to produce a step-by-step guide describing what you want to accomplish.
+
+\subsection{Goal}
+
+I am focusing specifically on one aspect of my research process, the sifting through multiple documents for the purpose of finding key terms and ideas and then organizing them into a unified narrative. The single solvable problem I am addressing from Scoping 1 is the process of gathering and then sifting through multiple documents with ease. I want to make the computer do as many of the mechanical, computable tasks as possible.
+
+\subsection{Decomposition}
+
+The process of finding and organising relevant documents goes as follows:
+
+\begin{itemize}
+
+    \item
+\end{itemize}
+
+\subsection{Pattern Recognition}
+
+The patterns I am going to focus on are:
+
+\begin{itemize}
+    \item
+
+\end{itemize}
+
+\subsection{Algorithm Design}
+
+The algorithm is made up of:
+
+\begin{itemize}
+    \item
+
+\end{itemize}
+
+
+\section{Elaboration I}
+
+\subsection{Instructions}
+
+Using the step-by-step breakdown of your problems / solutions developed last week, identify technologies (programming languages, software libraries, APIs (Application programming interfaces, the means by which one program talks to another program) and other components of a modern data collection or processing workflow) that could accomplish each step. You may want to specify more than one possible technology.
+
+\subsection{Task Outline}
+
+\noindent
+In Scoping II I identified two patterns I wish to make easier. There were:
+
+\begin{itemize}
+    \item Finding specific words and sentences within and across different papers in an efficient manner
+    \item Collecting and organizing papers into a single bibliographic database in such a way that I can search for papers based on a theme.
+
+\end{itemize}
+
+\noindent
+Depending on the software I can find, I may modify the second bullet point to make it a simpler goal for my PoC. I will also include a referencing goal as a part of my PoC.
+
+\begin{itemize}
+    \item Find software which will serve as a reference database and which will do the referencing work for me 
+\end{itemize}
+
+
+\noindent
+I notice that I did not make the Algorithm part of Scoping II detailed enough. It seems I misunderstood the difference between it and the Decomposition section. In the Elaboration process section I rectify this mistake.
+
+
+\subsection{Potential Software to solve my problems}
+
+\subsubsection{OverLeaf}
+
+Document writing with more control over the formatting etc. compared to Word or Google Documents. Also enables version control in a seamless way.
+
+\subsubsection{GitHub}
+
+Version control website.
+
+\subsubsection{Excel}
+
+I think Excel will work well in conjunction with Voyant and Zotero as a way to thematically organise papers and other resources in a more visually simple and user friendly style. This is more for myself as a user on the GUI end of the research process.
+
+\subsection{Elaboration process}
+
+The steps I need to take to test the software listed above are as follows:
+
 \begin{itemize}
     \item 
 \end{itemize}
 
-\section{Pains and Pain relievers}
+\section{Elaboration II}
 
-\begin{itemize}
-    \item \textit{}
-\end{itemize}
+\section{Proof of Concept Design}
 
-\section{Gains and gain creators}
+\subsection{Instructions}
 
-\begin{enumerate}
-\item  \textit {I would like to be able to open multiple similar articles in the one place and easily search for terms within them collectively and seamlessly.} CREATOR: 
-\item \textit {I would like to map out the main arguments of single and multiple papers in an easy to absorb way.} CREATOR: 
-\end{enumerate}
+Create user stories. Each user story should have:
+The user story 
+Each user story should open with the formalism: ‘As a [user role], I want [some goal], so that [some reason]’.
+We haven’t covered user roles in detail, so it’s entirely acceptable to have a single user role: yourself (if you intend multiple people to use the project, other user roles are desirable.)
+Example: ‘As a student, I want my typesetting software to generate my bibliography, so that I don’t have to double check in text citations against my bibliography’.
+Acceptance criteria
+Acceptance criteria should be one or more tests you make (or automate) that can differentiate between the story being completed and not completed.
+It is entirely acceptable to add additional acceptance criteria later if you find bugs or other issues.
+Example: ‘As a student, I should be able to: 1) supply a bibliography database to the program. 2) Choose an in-text citation from the sources in the database. 3) Choose the bibliographic standard. 4) Cause the program to generate a bibliography and correct in-text citation based on the chosen citation and standard’. A tester (also, probably you) can perform these steps in order to see if your ‘bibliography generation’ works.
+Categorise user stories into themes and identify prerequisites.
+Categorise the stories into themes, as a way of double-checking that you are not missing any major aspect of work, and are identifying dependencies and duplicates.
+If one story depends on another, make sure to identify the story you must do first. 
+If one story is a duplicate of another (judge by your acceptance criteria) either refine it so that it’s its own task, merge the two, or remove it.
+Identify what stories must be completed in order for your proof of concept to work at all, and what stories might be completed to make your proof of concept more impressive.
+Load these user stories into your project management system that you identified earlier in the semester. (Trello, Jira, Github’s Project tab in your repository, etc... ) 
+Once all stories are loaded, add no more than five to your ’to do’ list. 
+Put the remainder of your stories into your ‘backlog’.
+When you begin work on a story, move it to ‘in progress’. Aim to have no more than three stories in progress.
+Export a report from your project management system so that your peers can see how you organised your tasks on Cloudstor. 
+For those eyeing HD, create a plan for your quality assurance. Read up on software testing (see: Chapter 2 of  c
+Create a template for documenting running the acceptance tests you’ve identified. 
+Make sure your project management system can track errors that you find and need to fix (or document) with these tests.
+Make sure you have a place where it is easy to document your specific acceptance tests, both good and bad
+Example: We have used a confluence wiki for this purpose: https://faimsproject.atlassian.net/wiki/spaces/FAIMS/pages/941293583/Copy+of+Harvard+Excavation+2017+Regression+Test+-+AW
+Example: In a github issue, https://guides.github.com/features/issues/, reply to the issue with a comment which contains your acceptance test for that issue.
+Alternative: Use your learning journal in the already normal format, where expectation/intention is the task you are performing as your acceptance test.
+Review all the acceptance tests in your user stories, and figure out the order that you need to run them in if you’re testing all of the stories which must be completed, and then if you’re testing all of the stories (including those that might be completed). Make sure that a user performing these tests interacts with all of the functionality you plan to create. 
+Make sure that once you’ve planned out all of your user stories, they can accomplish the goal you set for yourself in scoping. 
 
+\section{Disaster Recovery Plan}
 \end{document}
