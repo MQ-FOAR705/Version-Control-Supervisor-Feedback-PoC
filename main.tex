@@ -1,5 +1,9 @@
 \documentclass{article}
+\usepackage{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\geometry{a4paper, left=20mm, right=20mm, top=25mm, bottom=25mm}
 
 \title{Version-Control-Supervisor-Feedback-PoC}
 \author{Jeremy Amin}
@@ -21,6 +25,8 @@
 
 \maketitle
 \tableofcontents
+
+\pagebreak
 
 \section{Introduction}
 
@@ -111,7 +117,7 @@ Using the step-by-step breakdown of your problems / solutions developed last wee
 \subsection{Task Outline}
 
 \noindent
-In Scoping II I identified two patterns I wish to make easier. There were:
+In Scoping I identified two patterns I wish to make easier. There were:
 
 \begin{itemize}
     \item Finding specific words and sentences within and across different papers in an efficient manner
@@ -139,11 +145,12 @@ Document writing with more control over the formatting etc. compared to Word or 
 
 \subsubsection{GitHub}
 
-Version control website.
+This will be where I have the online version controlled repository for the feedback.
 
-\subsubsection{Excel}
+\subsubsection{Pandoc}
 
-I think Excel will work well in conjunction with Voyant and Zotero as a way to thematically organise papers and other resources in a more visually simple and user friendly style. This is more for myself as a user on the GUI end of the research process.
+Pandoc will allow me to convert from TeX to docx.
+
 
 \subsection{Elaboration process}
 
@@ -159,34 +166,35 @@ The steps I need to take to test the software listed above are as follows:
 
 \subsection{Instructions}
 
-Create user stories. Each user story should have:
-The user story 
-Each user story should open with the formalism: ‘As a [user role], I want [some goal], so that [some reason]’.
-We haven’t covered user roles in detail, so it’s entirely acceptable to have a single user role: yourself (if you intend multiple people to use the project, other user roles are desirable.)
-Example: ‘As a student, I want my typesetting software to generate my bibliography, so that I don’t have to double check in text citations against my bibliography’.
-Acceptance criteria
-Acceptance criteria should be one or more tests you make (or automate) that can differentiate between the story being completed and not completed.
-It is entirely acceptable to add additional acceptance criteria later if you find bugs or other issues.
-Example: ‘As a student, I should be able to: 1) supply a bibliography database to the program. 2) Choose an in-text citation from the sources in the database. 3) Choose the bibliographic standard. 4) Cause the program to generate a bibliography and correct in-text citation based on the chosen citation and standard’. A tester (also, probably you) can perform these steps in order to see if your ‘bibliography generation’ works.
-Categorise user stories into themes and identify prerequisites.
-Categorise the stories into themes, as a way of double-checking that you are not missing any major aspect of work, and are identifying dependencies and duplicates.
-If one story depends on another, make sure to identify the story you must do first. 
-If one story is a duplicate of another (judge by your acceptance criteria) either refine it so that it’s its own task, merge the two, or remove it.
-Identify what stories must be completed in order for your proof of concept to work at all, and what stories might be completed to make your proof of concept more impressive.
-Load these user stories into your project management system that you identified earlier in the semester. (Trello, Jira, Github’s Project tab in your repository, etc... ) 
-Once all stories are loaded, add no more than five to your ’to do’ list. 
-Put the remainder of your stories into your ‘backlog’.
-When you begin work on a story, move it to ‘in progress’. Aim to have no more than three stories in progress.
-Export a report from your project management system so that your peers can see how you organised your tasks on Cloudstor. 
-For those eyeing HD, create a plan for your quality assurance. Read up on software testing (see: Chapter 2 of  c
-Create a template for documenting running the acceptance tests you’ve identified. 
-Make sure your project management system can track errors that you find and need to fix (or document) with these tests.
-Make sure you have a place where it is easy to document your specific acceptance tests, both good and bad
-Example: We have used a confluence wiki for this purpose: https://faimsproject.atlassian.net/wiki/spaces/FAIMS/pages/941293583/Copy+of+Harvard+Excavation+2017+Regression+Test+-+AW
-Example: In a github issue, https://guides.github.com/features/issues/, reply to the issue with a comment which contains your acceptance test for that issue.
-Alternative: Use your learning journal in the already normal format, where expectation/intention is the task you are performing as your acceptance test.
-Review all the acceptance tests in your user stories, and figure out the order that you need to run them in if you’re testing all of the stories which must be completed, and then if you’re testing all of the stories (including those that might be completed). Make sure that a user performing these tests interacts with all of the functionality you plan to create. 
-Make sure that once you’ve planned out all of your user stories, they can accomplish the goal you set for yourself in scoping. 
-
 \section{Disaster Recovery Plan}
+
+\section{Learning Journal for new PoC}
+
+\subsection{7 NOV}
+
+1:30 PM
+\begin{itemize}
+    \item Intention: Figure out how to convert TeX document to docx.
+    \item Action: Spoke with Brian in a consultation. He send me this article to read: https://medium.com/@zhelin\-chen91/how-to-convert-from-latex-to-ms-word-with-pandoc-f2045a762293
+    \item Outcome: It seems that Pandoc is a very good candidate software for converting TeX into docx. Pandoc is both free and open source, two positives for a piece of software I am intending on using in a workflow for multiple users.
+\end{itemize}
+
+1:46 PM
+\begin{itemize}
+    \item Intention: Download Pandoc for my Macbook
+    \item Action: Went to: https://pandoc.org/installing.html to find the installer for Mac. Clicked on the button at the top of the page `Download the latest installer for macOS.' Followed instructions and installed Pandoc. 
+    \item Outcome: It seems that I need to have either an older version of Pandoc, or I need to install a newer macOS. On the Homebrew Formulae website it states in the `bottle' section `mojave, high\textunderscore sierra, sierra'. So it seems the current version of Pandoc is only compatible with those three macOS versions.
+    \item Solution: I will look for an older version of Pandoc compatible with OS X El Capitan Version 10.11.6. If I cannot find a compatible version of Pandoc I may have to update my OS. I have found a number of programs do not run on my OS. Considering my OS is a number of years old I am not surprised.
+\end{itemize}
+
+2:05 PM
+
+\begin{itemize}
+    \item Intention: Find a version of Pandoc which works on my Macbook
+    \item Action: Went to: https://stackoverflow.com/questions/48430440/install-older-version-of-pandoc-2-using-homebrew from a google search for compatible versions of Pandoc with macOS El Capitan 10.11.6.
+    \item Outcome: The answer provided three solutions. One option was to use old formulas. The second was to use old bottles. The third was to ``Build your own retro-formula". I decided to try the second option.
+    \item Following the instructions I went to this website: https://bintray.com/homebrew/bottles/pandoc/1.16.0.\-2\#files which had this file https://bintray.com/homebrew/bottles/download\textunderscore  file?file\textunderscore path=pandoc-1.16.0\-.2.el\textunderscore capitan.bottle.tar.gz
+    \item Solution: I will look for an older version of Pandoc compatible with OS X El Capitan Version 10.11.6. If I cannot find a compatible version of Pandoc I may have to update my OS. I have found a number of programs do not run on my OS. Considering my OS is a number of years old I am not surprised.
+\end{itemize}
+
 \end{document}
