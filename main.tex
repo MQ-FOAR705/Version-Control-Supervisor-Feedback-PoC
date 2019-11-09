@@ -42,7 +42,7 @@ I need to:
     \item Make sure I record important actionable feedback in such a way that it is easily understood by myself and them at a later date.
     \item Save the feedback in a version controlled format which I will not lose even if my computer crashes.
     \item Implement their feedback and record it precisely so that I can demonstrate that I have met their demands/suggestions.
-    \item Send the implemented actions to my supervisor in an easy to use format for them. (Probably .txt, .docx, or .pdf)
+    \item Send the implemented actions to my supervisor in an easy to use format for them. (Probably Txt, Docx, or PDF)
     \item Just in case there is a contradiction between their initial feedback and my appropriate implementation of said feedback, I will have a copy of what they have suggested ready to hand.
     \item Just in case they wish to see precisely what I have changed, I will have a specific 
 \end{itemize}
@@ -74,24 +74,27 @@ Using elements of ‘computational thinking’, consider the pains, gains, and s
     \item Pattern Recognition:Observing patterns, trends, and regularities in data.
     \item Algorithm Design:Developing the step by step instructions for solving this and similar problems
 \end{itemize}
-First (and most important), decompose the activities that involve ‘pains’, opportunities for ‘gains’, and any solutions you proposed into small parts and/or discrete steps. Next (if possible), identify patterns in the problems you are trying to solve or the solutions you are proposing. Finally, revise the solutions you developed during Business Analysis to produce a step-by-step guide describing what you want to accomplish.
 
 \subsection{Goal}
 
-To create a workflow, preferably with some kind of code to eliminate at least one manual step in the chain of action.
+To create a workflow, preferably with some kind of code, to eliminate at least one manual step in the chain of action from receiving feedback to demonstrating that I have implemented feedback.
 
 \subsection{Decomposition}
 
-The process of recieving feedback from my supervisor may proceed as follows:
+The process of receiving feedback from my supervisor may proceed as follows:
 
 \begin{itemize}
-    \item Receive email, or log into Microsoft office online to check comments left on my writing.
+    \item Download TeX file onto my computer
+    \item Convert TeX file to Docx
+    \item Send Docx file to supervisor
+    \item Receive commented Docx file from supervisor
     \begin{itemize}
-    \item If document sent via email, then download docx file and open it in Microsoft Office or LibreOffice.
-    \item If accessed online, then download the file as a docx.
+    \item If document sent via email, then download Docx file and open it in Microsoft Office or LibreOffice.
+    \item If accessed online, then download the file as a Docx.
     \end{itemize}
     \item Find the comments in the document.
-    \item Copy the feedback from the comments boxes
+    \item Copy the changed sections of the document to LaTeX.
+    \item Copy the feedback from the comments boxes.
     \item 
     
 \end{itemize}
@@ -116,10 +119,6 @@ The algorithm is made up of:
 
 
 \section{Elaboration I}
-
-\subsection{Instructions}
-
-Using the step-by-step breakdown of your problems/solutions developed last week, identify technologies (programming languages, software libraries, APIs (Application programming interfaces, the means by which one program talks to another program) and other components of a modern data collection or processing workflow) that could accomplish each step. You may want to specify more than one possible technology.
 
 \subsection{Task Outline}
 
@@ -146,6 +145,15 @@ I notice that I did not make the Algorithm part of Scoping II detailed enough. I
 
 \subsection{Potential Software to solve my problems}
 
+\subsubsection{Terminal on OSx}
+
+Downloading TeX script from Overleaf git clone.
+
+\begin{itemize}
+    \item Command to download a file from the internet: curl -O URL of file
+    \item 
+\end{itemize}
+
 \subsubsection{OverLeaf}
 
 Document writing with more control over the formatting etc. compared to Word or Google Documents. Also enables version control in a seamless way.
@@ -156,7 +164,11 @@ This will be where I have the online version controlled repository for the feedb
 
 \subsubsection{Pandoc}
 
-Pandoc will allow me to convert from TeX to docx.
+Pandoc will allow me to convert from TeX to Docx. I may need to convert TeX to Markdown, then Markdown to Docx
+
+\subsubsection{pdf2docx.com/}
+
+This is a free website which converts PDF's to Docx
 
 
 \subsection{Elaboration process}
@@ -181,9 +193,9 @@ The steps I need to take to test the software listed above are as follows:
 
 1:30 PM
 \begin{itemize}
-    \item Intention: Figure out how to convert TeX document to docx.
+    \item Intention: Figure out how to convert TeX document to Docx.
     \item Action: Spoke with Brian in a consultation. He send me this article to read: https://medium.com/@zhelin\-chen91/how-to-convert-from-latex-to-ms-word-with-pandoc-f2045a762293
-    \item Outcome: It seems that Pandoc is a very good candidate software for converting TeX into docx. Pandoc is both free and open source, two positives for a piece of software I am intending on using in a workflow for multiple users.
+    \item Outcome: It seems that Pandoc is a very good candidate software for converting TeX into Docx. Pandoc is both free and open source, two positives for a piece of software I am intending on using in a workflow for multiple users.
 \end{itemize}
 
 1:46 PM
