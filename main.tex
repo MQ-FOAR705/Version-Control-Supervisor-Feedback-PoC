@@ -184,6 +184,24 @@ The steps I need to take to test the software listed above are as follows:
 
 \subsection{Instructions}
 
+\subsubsection{Workflow steps}
+
+\begin{enumerate}
+    \item Download and install Git onto your computer. Go to this website to find the download links `https://git-scm.com/downloads'
+    \item Download and install Pandoc onto your computer. Go to this website to find the download links `https://pandoc.org/installing.html'
+    \item 
+    \item Open Terminal
+    \item In Terminal, figure out current directory. Type `ls' into the command line in Terminal.
+    \item Change directories so that you are where you want to be when downloading the TeX project. My target directory, named Project, is on my Desktop, so I typed into the command line `cd /Users/JeremyAmin/Desktop/Project'
+    \item Next step is to download the project from Overleaf. To do this: 
+    \begin{enumerate}
+        \item Go to the website and when in a project click on the `Menu' button.
+        \item Under the `Sync' heading, click on the `Git' button.
+        \item Copy the entire link `git clone https://git.overleaf.com/[yourprojectnumber]'
+        \end{enumerate}
+    \item Go back to Terminal and paste the link into the desired directory.
+\end{enumerate}
+
 \section{Disaster Recovery Plan}
 
 \section{Learning Journal for new PoC}
@@ -229,6 +247,26 @@ The steps I need to take to test the software listed above are as follows:
     \item Intention: Figure out how to make table of contents link to the relevant section within the document.
     \item Action: Searched on google for solution.
     \item Outcome: Could not find what I was after. Referred to classmates TeX code and copied it to my own document. Success with making the table of contents link to sections within itself.
+\end{itemize}
+
+10 NOV 8:32 PM
+
+\begin{itemize}
+    \item Intention: Download Overleaf project from Terminal with git clone.
+    \item Action: Over the past few days I was unsuccessfully attempting to download the git clone of my Overleaf project. I was trying to download the project using the `curl -O [URL]' command I found online. This command was successfully working for downloading PDF documents so I figured it would also work for the git clone.
+    \item Outcome: After fiddling with different variations of commands on and off over the past few days it clicked that I did not need to use the curl command at all! Copying the entire line supplied in the Overleaf Menu `git clone https://git.overleaf.com/[projectnumber]' led to Terminal prompting me to type my username for Overleaf, then it prompted my password. After typing them in it allowed me to successfully download the project to the directory of my choosing. I had previously downloaded Git from \href{https://git-scm.com/downloads}{this website} so there was no error in using the command for git.
+    \item Intention: To successfully convert the downloaded TeX file to Docx with Pandoc.
+    \item Actions: Found a page on the \href{https://pandoc.org/demos.html}{Pandoc website} with example scripts for Terminal. Example number 30 was the TeX to Docx Shell command `pandoc -s example.tex -o example.docx'. I opened up a Terminal and tested the command on a previously downloaded TeX file.
+    \item Outcome: Test of command was successful. I opened the new Docx file and it was a successful conversion.
+    \item Intention: Read about a software called `Rakali'.
+    \item Action: On this \href{https://blog.martinfenner.org/2014/08/18/introducing-rakali/}{blog post} by Martin Fenner on 18 August 2014 he describes what Rakali is. He writes that it is a ``Ruby gem that acts as a wrapper for the Pandoc universal document converter...built...to make it easier to use Pandoc to convert large numbers of documents in an automated way:
+    \begin{itemize}
+        \item bulk conversion of all files in a folder with a specific extension, e.g. md.
+        \item input via a configuration file in yaml format instead of via the command line
+        \item validation of documents via JSON Schema, using the json-schema Ruby gem.
+        \item Logging via stdout and stderr."
+    \end{itemize}
+    \item Outcome: This looks like a very interesting and useful piece of software however time restraints lean me towards not using it for the time being. I may look into it at a later date for my future academic work.
 \end{itemize}
 
 \end{document}
