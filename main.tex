@@ -150,7 +150,7 @@ I notice that I did not make the Algorithm part of Scoping II detailed enough. I
 Downloading TeX script from Overleaf git clone.
 
 \begin{itemize}
-    \item Command to download a file from the internet: curl -O URL of file
+    \item Command to download a file from the internet: git clone
     \item 
 \end{itemize}
 
@@ -172,7 +172,7 @@ This is a free website which converts PDF's to Docx
 
 \subsection{Elaboration process}
 
-The steps I need to take to test the software listed above are as follows:
+
 
 \begin{itemize}
     \item 
@@ -180,9 +180,52 @@ The steps I need to take to test the software listed above are as follows:
 
 \section{Elaboration II}
 
+\subsection{Pandoc}
+
+Note: Before updating my macOS, programs such as Microsoft Word and Pandoc would not run as far as I could tell. Updating to the latest macOS (Catalina Version 10.15.1) fixed this problem. Prior to this I was using OS X El Capitan and was running into incompatibility issues frequently enough to warrant an update.
+
+\begin{itemize}
+    \item Pandoc is an easy to use program. Once it is installed, a few commands in the macOS terminal allow for quick conversions from and to multiple file types.
+    \item I tested a simple procedure to create and then convert a Docx file to txt and md files respectively. The procedure was a success.
+    \begin{itemize}
+        \item In the folder of my choice I opened a terminal by right clicking on the folder and selecting `New Terminal at Folder'.
+        \item Once in terminal, I input `touch file.docx' to create a new Docx file.
+        \item Then I opened up the new file and wrote a few sentences in the body of the document and also wrote a few comments for the sentences in the body of the document.
+        \item Then back in terminal I ran the following two commands.
+        \begin{itemize}
+            \item pandoc -s file.docx -o file.txt
+            \item pandoc -s file.docx -o file.txt
+        \end{itemize}
+        \item These commands created a txt and md file respectively but without the comments I wrote in Word.
+        \item Modifying the pandoc command to include an argument which would retain the changes made to the Docx file produced a different output.
+        \begin{itemize}
+            \item pandoc --track-changes=all file.docx -o file.txt
+        \end{itemize}
+        \item The inclusion of --track-changes=all successfully generated a txt file which retained the comments I wrote in the Docx file.
+    \end{itemize}
+\end{itemize}
+
+
 \section{Proof of Concept Design}
 
-\subsection{Instructions}
+\subsection{User stories}
+
+\subsubsection{Comments in Word}
+
+\begin{itemize}
+    \item As a researcher I want to be able to send and receive feedback in Docx file format and verion control the comments from my supervisor.
+\end{itemize}
+
+\subsubsection{Acceptance Criteria}
+
+As a research student I should be able to:
+
+\begin{enumerate}
+    \item Receive a Docx document which contains feedback on my work from my supervisor.
+    \item Convert the Docx document to a non-binary file format (eg txt or md) which I can easily manipulate on terminal, Git and GitHub.
+    \item Synchronise both the Docx file and the non-binary file to a local Git repository.
+    \item Synchronise the local repository to a GitHub repository which will 
+\end{enumerate}
 
 \subsubsection{Workflow steps}
 
