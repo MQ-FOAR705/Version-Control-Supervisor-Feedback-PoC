@@ -38,7 +38,7 @@ This document is my new PoC. My plan is to create a workflow which allows me to 
 
 I need to:
 \begin{itemize}
-    \item Have the meeting with my supervisor and record their feedback on my progress.
+    \item Have the meeting with my supervisor and record their feedback on my progress or have them send feedback in a Docx file.
     \item Make sure I record important actionable feedback in such a way that it is easily understood by myself and them at a later date.
     \item Save the feedback in a version controlled format which I will not lose even if my computer crashes.
     \item Implement their feedback and record it precisely so that I can demonstrate that I have met their demands/suggestions.
@@ -63,17 +63,8 @@ I need to:
     \end{itemize}
 \end{itemize}
 
-\subsection{\textit {Gains} and gain creators}
-
 \section{Scoping II: Computational Analysis}
 
-\subsection{Instructions}
-Using elements of ‘computational thinking’, consider the pains, gains, and solutions you identified during BA. Translate them into a form that can (at least in part) be addressed by computers. To do so, consider these steps:
-\begin{itemize}
-    \item Decomposition:Breaking down data, processes, or problems into smaller, manageable parts
-    \item Pattern Recognition:Observing patterns, trends, and regularities in data.
-    \item Algorithm Design:Developing the step by step instructions for solving this and similar problems
-\end{itemize}
 
 \subsection{Goal}
 
@@ -104,39 +95,18 @@ The process of receiving feedback from my supervisor may proceed as follows:
 The patterns I am going to focus on are:
 
 \begin{itemize}
-    \item
+    \item Copying the in body text and comments from the Docx file to txt or md.
+    \item Saving the txt or md files with a version history.
 
 \end{itemize}
 
 \subsection{Algorithm Design}
 
-The algorithm is made up of:
-
 \begin{itemize}
-    \item
-
+    \item Use terminal to quickly interact with Pandoc, Word, Git, and GitHub.
 \end{itemize}
-
 
 \section{Elaboration I}
-
-\subsection{Task Outline}
-
-\noindent
-In Scoping I identified two patterns I wish to make easier. There were:
-
-\begin{itemize}
-    \item Finding specific words and sentences within and across different papers in an efficient manner
-    \item Collecting and organizing papers into a single bibliographic database in such a way that I can search for papers based on a theme.
-
-\end{itemize}
-
-\noindent
-Depending on the software I can find, I may modify the second bullet point to make it a simpler goal for my PoC. I will also include a referencing goal as a part of my PoC.
-
-\begin{itemize}
-    \item Find software which will serve as a reference database and which will do the referencing work for me 
-\end{itemize}
 
 
 \noindent
@@ -151,12 +121,15 @@ Downloading TeX script from Overleaf git clone.
 
 \begin{itemize}
     \item Command to download a file from the internet: git clone
-    \item 
 \end{itemize}
 
 \subsubsection{OverLeaf}
 
 Document writing with more control over the formatting etc. compared to Word or Google Documents. Also enables version control in a seamless way.
+
+\subsubsection{Git}
+
+A program which allows for local version controlling.
 
 \subsubsection{GitHub}
 
@@ -170,24 +143,15 @@ Pandoc will allow me to convert from TeX to Docx. I may need to convert TeX to M
 
 This is a free website which converts PDF's to Docx
 
-\subsection{Elaboration process}
-
-
-
-\begin{itemize}
-    \item 
-\end{itemize}
-
 \section{Elaboration II}
-
-\subsection{Pandoc}
 
 Note: Before updating my macOS, programs such as Microsoft Word and Pandoc would not run as far as I could tell. Updating to the latest macOS (Catalina Version 10.15.1) fixed this problem. Prior to this I was using OS X El Capitan and was running into incompatibility issues frequently enough to warrant an update.
 
-\begin{itemize}
-    \item Pandoc is an easy to use program. Once it is installed, a few commands in the macOS terminal allow for quick conversions from and to multiple file types.
-    \item I tested a simple procedure to create and then convert a Docx file to txt and md files respectively. The procedure was a success.
-    \begin{itemize}
+\subsection{Pandoc}
+
+Pandoc is an easy to use program. Once it is installed, a few commands in the macOS terminal allow for quick conversions from and to multiple file types. I tested a simple procedure to create and then convert a Docx file to txt and md files respectively. The procedure was a success.
+
+ \begin{itemize}
         \item In the folder of my choice I opened a terminal by right clicking on the folder and selecting `New Terminal at Folder'.
         \item Once in terminal, I input `touch file.docx' to create a new Docx file.
         \item Then I opened up the new file and wrote a few sentences in the body of the document and also wrote a few comments for the sentences in the body of the document.
@@ -202,9 +166,54 @@ Note: Before updating my macOS, programs such as Microsoft Word and Pandoc would
             \item pandoc --track-changes=all file.docx -o file.txt
         \end{itemize}
         \item The inclusion of --track-changes=all successfully generated a txt file which retained the comments I wrote in the Docx file.
+\end{itemize}
+
+The next step in my testing phase was to figure out how to create a local repository with version controlling abilities.
+
+\subsection{Git \& GitHub}
+
+For Git and GitHub \href{https://www.youtube.com/watch?v=SWYqp7iY_Tc}{this YouTube video by Traversy Media} was quite helpful. The instructor simply explained a few commands for Git and GitHub from the terminal command line.
+
+\subsubsection{Git}
+
+Using Git was initially confusing as I was not able to open a GUI for it. After fiddling around with it for a while it clicked that I could just use it via terminal. This proved more efficient and less prone to error than relying on the GUI side of the program. My test included:
+
+\begin{itemize}
+    \item Creating a local Git repository. In the same terminal which was in the directory of my files which were converted using Pandoc I wrote in the command line:
+    \begin{itemize}
+        \item git init
+    \end{itemize}
+    \item This initialized an empty Git repository in that directory.
+    \item I then wrote a few more commands by following the instructions from the aforementioned video to add and commit my preferred files to the Git repository. A few commands involved include:
+    \begin{itemize}
+        \item git add - This selected files to be added to the Git repository.
+        \item git commit - This committed the selected files to the Git repository.
     \end{itemize}
 \end{itemize}
 
+\subsubsection{GitHub}
+
+GitHub was used by us in class from the beginning of semester for our version control. I decided it would be useable for my PoC purposes as an online and easy to use interface for comparing document and comment changes from a Docx file.
+
+\begin{itemize}
+    \item This command connected my local repository with one on GitHub I had reviously made:
+    \begin{itemize}
+        \item git remote add origin [URL]
+    \end{itemize}
+    \item This command pushed the content of my local Git repository to the repository on GitHub I created:
+    \begin{itemize}
+        \item git push -u origin master
+    \end{itemize}
+    \item To push any further changes done in my local Git repository to GitHub I used this command in terminal:
+    \begin{itemize}
+        \item git push
+    \end{itemize}
+    \item And this command to pull changes done in the repository on GitHub:
+    \begin{itemize}
+        \item git pull
+    \end{itemize}
+    
+\end{itemize}
 
 \section{Proof of Concept Design}
 
@@ -226,26 +235,6 @@ As a research student I should be able to:
     \item Synchronise both the Docx file and the non-binary file to a local Git repository.
     \item Synchronise the local repository to a GitHub repository which will 
 \end{enumerate}
-
-\subsubsection{Workflow steps}
-
-\begin{enumerate}
-    \item Download and install Git onto your computer. Go to this website to find the download links `https://git-scm.com/downloads'
-    \item Download and install Pandoc onto your computer. Go to this website to find the download links `https://pandoc.org/installing.html'
-    \item 
-    \item Open Terminal
-    \item In Terminal, figure out current directory. Type `ls' into the command line in Terminal.
-    \item Change directories so that you are where you want to be when downloading the TeX project. My target directory, named Project, is on my Desktop, so I typed into the command line `cd /Users/JeremyAmin/Desktop/Project'
-    \item Next step is to download the project from Overleaf. To do this: 
-    \begin{enumerate}
-        \item Go to the website and when in a project click on the `Menu' button.
-        \item Under the `Sync' heading, click on the `Git' button.
-        \item Copy the entire link `git clone https://git.overleaf.com/[yourprojectnumber]'
-        \end{enumerate}
-    \item Go back to Terminal and paste the link into the desired directory.
-\end{enumerate}
-
-\section{Disaster Recovery Plan}
 
 \section{Learning Journal for new PoC}
 
