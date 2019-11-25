@@ -14,7 +14,7 @@ In this repository you will find:
 - [Websites.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Websites.txt) - A file containing a list of websites used in this workflow.
 - [Terminal-commands-Pandoc.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Terminal-commands-Pandoc.txt) - A list of useful commands in macOS terminal for converting documents using Pandoc.
 - A list of need to know and useful to know command line scripts for Shell to communicate with Git, Pandoc, and GitHub.
-[Step-guide.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Step-guide.txt) - An example of what version controlling files may look like. 
+- [Step-guide.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Step-guide.txt) - An example of what version controlling files may look like. 
 - A few examples of what it looks like to version control comments in Docx files which have been converted to txt or md.
 - [A License for this repository](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/LICENSE)
 - [A TeX file detailing my process in creating this PoC](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/main.tex)
