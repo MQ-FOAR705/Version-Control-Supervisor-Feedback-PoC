@@ -301,4 +301,64 @@ As a research student I should be able to:
     \item Outcome: This looks like a very interesting and useful piece of software however time restraints lean me towards not using it for the time being. I may look into it at a later date for my future academic work.
 \end{itemize}
 
+\section{Before we Start - 30 OCT 2019}
+
+Intention: To complete lesson 1 of R for Social Scientists
+
+Actions:
+
+\subsection{What is R? What is RSTudio?}
+\begin{itemize}
+    \item `R' refers to both the programming language as well as the software that interprets the scripts written using it.
+    \item RStudio is a popular current way to write R scrips and interact with R software.
+    
+\subsection{Why learn R?}
+
+    \item R is preferable for a number of reasons. 1. It relies on written commands, not a mouse. (Written commands may not be as user friendly for the typical GUI user but replicability is far more reliable. 2. Working with scripts forces the user to be more intimately connected with their analysis or whatever other task they wish to conduct with R. This facilitates learning and grants more control to the user. 3. R is interdisciplinary and extensible. It allows for the application of more than one discipline's methods of analysis for data analysis. 4. R allows for the production of high-quality graphics. 5. R has a community of users and people with know-how in case a person needs help. 6. R is free, open-source and cross platform.
+    \item Opened a New project and created a new file within the project.
+    \item Default layout for RStudio is: 
+    \begin{itemize}
+        \item Top Left - Source: pane for my scripts and documents
+        \item Bottom Left - Console: pane to show me what R would look and be like without RStudio
+        \item Top Right - Enviornment/History: pane to show me what I have done.
+        \item Bottom Right - Files and more: pane to allow me to see the contents of the project/working directory
+    \end{itemize}
+\item Created folders from Console using commands: dir.create("data"), dir.create("data\textunderscore output"), and dir.create
+
+\subsection{Exercise: Use the install option from the packages tab to install the ‘tidyverse’ package.}
+\item I installed the `tidyverse' package from the drop-down menu. If I want to download packages in the future I can also type the following command into the Console: install.packages()
+
+\end{itemize}
+
+\section{Introduction to R - 4 NOV 2019}
+Intention: To complete the Introduction to R lesson.
+
+Actions:
+
+\subsection{Exercise: What do you think is the current content of the object area\textunderscore acres? 123.5 or 6.175?}
+\begin{itemize}
+    \item The correct answer is 6.175 because although the value of area\textunderscore hectares was changed to 50 this is written after the line to multiply it by 2.47 to convert it into acres.
+    \item I assigned values for length, width, and area. Below are the lines I used.
+    \begin{itemize}
+    \item[] \textgreater length \textless- 5
+    \item[] \textgreater width \textless- 10
+    \item[] \textgreater area \textless- length * width
+    \item[] \textgreater area
+    \item[] [1] 50
+    \end{itemize}
+\item The value of area did not change when I changed the values of width and length. This is for the same reason as the previous exercise. Once I reassigned area to be length multiplied by width the new values of length and width were used and a new value of area was made.
+\item Functions are ready made scripts. 
+\item Typing ?round into the console brought up the Help pane in the bottom right pane of RStudio. Other functions similar to round are ceiling, floor, trunc, and signif.
+\item ceiling and floor seem to perform opposite functions. Ceiling takes whatever argument x and returns the rounded up integer. EG ceiling(1) outputs 1. ceiling(1.0001) outputs 2. floor does something like the opposite. floor(1) outputs 1. floor(1.9) outputs 1 as well.
+\item trunc seems to round the input down to the nearest integer to zero. trunc(1.1) outputs 1. trunc(.9) outputs 0. signif  outputs the rounded value in its first argument by the specified number of significant digits in the second argument. This function seems to only output up to 6 significant digits. signif(1.123456789, 7) outputs [1] 1.123467. signif(1.123456789, 8) also outputs [1] 1.123457.
+\item For the round function, the digits argument indicates the number of decimal places to be used. It is used by placing a comma after the first argument. E.G. round(x, digits)
+\end{itemize}
+
+Continuing 5 NOV 2019
+
+\begin{itemize}
+    \item When mixing vector types into a single vector, R implicitly converts them into a single type. When I made a vector with three numeric types and one character type, the typeof function output the type as character. This means R converted the three numeric arguments into character types.
+    \item 
+\end{itemize}
+
 \end{document}
