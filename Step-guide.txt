@@ -1,4 +1,4 @@
-This is an example of a step by step process going from not having any folders or files to connecting a created directory and the files it contains to GitHub in such a way that there is the option to version control Docx feedback in both binary and text formats. This is how I did it on a test run:
+This is an example of a step by step process going from not having any folders or files to connecting a created directory and the files it contains to GitHub in such a way that there is the option to version control Docx feedback in both binary and text formats. This is how I did it on a test run. The repository for this run can be found here https://github.com/Jeremy-Amin/PoC-final-JeremyAmin:
 
 *****
 
@@ -43,12 +43,11 @@ Save and close T-final.docx
 
 *****
 
-3. 
+3. Converting the docx file to txt while retaining comments from docx.
 
 In terminal, input:
 
     pandoc --track-changes=all T-final.docx -o T-final.txt
-
 
 This created a txt file which contained the following text:
 
@@ -59,7 +58,6 @@ second comment in T-final.]{.comment-start id="1" author="Jeremy Amin"
 date="2019-11-19T13:46:00Z"}This is the second sentence in
 T-final.[]{.comment-end id="1"}
 
-
 Breaking down what the above text means...
 
 This is for the first sentence in the body and the comment attached to it:
@@ -67,7 +65,6 @@ This is for the first sentence in the body and the comment attached to it:
 [This is the first comment in T-final.]{.comment-start id="0"
 author="Jeremy Amin" date="2019-11-19T13:45:00Z"}This is the first
 sentence written in T-final body.[]{.comment-end id="0"}
-
 
 This is for the second sentence in the body and the comment attached to it:
 
@@ -93,11 +90,15 @@ This is the first
 sentence written in T-final body.[]{.comment-end id="0"}
 
 
-
 Again, note the timestamp for the second comment I made:
 
 "2019-11-19T13:46:00Z"
 
+The result of this is that the txt file has the information of what and when the comment was made.
+
+*****
+
+4. Local version control
 
 Next step is to set up version control locally and online.
 
@@ -160,6 +161,10 @@ This gave me:
  create mode 100644 T-final.txt
 
 A successful commit to my local repository!
+
+*****
+
+5. Online version control.
 
 Now I want to connect my local repository to GitHub...
 
