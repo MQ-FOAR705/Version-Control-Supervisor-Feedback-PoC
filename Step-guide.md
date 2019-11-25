@@ -78,9 +78,8 @@ Note the timestamp for the first comment I made:
 
 And this is the information for the in-document text:
 
-This is the first
-sentence written in T-final body.[]{.comment-end id="0"}
-
+	This is the first
+	sentence written in T-final body.[]{.comment-end id="0"}
 
 Again, note the timestamp for the second comment I made:
 
@@ -164,17 +163,23 @@ Now I want to connect my local repository to GitHub...
 
 After going to (https://github.com/) and making an account, I create a new online repository.
 
-Once created, the webpage brings up a page with an option to "Quick setup". I look below that section to the section which says "…or push an existing repository from the command line". There are two lines of code for terminal there:
+Once created, the webpage brings up a page with an option to "Quick setup". I look below that section to the section which says:
+	
+	…or push an existing repository from the command line. 
 
-This line connects your local repository to the one on GitHub you are about to create Note that for you the URL will look different depending on what your username and repository name on GitHub are. My username is Jeremy-Amin and the repository is named PoC-final-JeremyAmin:
+There are two lines of code for terminal there.
+
+This line connects your local repository to the one on GitHub you are about to create. *Note that for you the URL will look different depending on what your username and repository name on GitHub are. My username is Jeremy-Amin and the repository is named PoC-final-JeremyAmin*:
 
 	git remote add origin https://github.com/Jeremy-Amin/PoC-final-JeremyAmin.git
 
-Once I input this to terminal, nothing should show up...indicating that the remote add (connection to the online repository) was a success!
+Once I input this to terminal, nothing showed up in terminal, indicating that the remote add (connection to the online repository) was a success!
 
 This line 'pushes' or uploads the contents of my local repository to GitHub:
 
 	git push -u origin master
+
+*Note: I was prompted to input my username and login for GitHub during this part of the process to access it from terminal*
 
 When input, this is what comes up on terminal:
 
