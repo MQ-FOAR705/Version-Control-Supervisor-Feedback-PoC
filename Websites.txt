@@ -1,0 +1,7 @@
+Git: https://git-scm.com/
+
+Pandoc: https://pandoc.org/
+
+GitHub: https://github.com/
+
+A video on YouTube by Traversy Media which is a helpful guide to using Git and GitHub: https://www.youtube.com/watch?v=SWYqp7iY_Tc
