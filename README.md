@@ -17,3 +17,4 @@ In this repository you will find:
 Step.guide.txt - An example of what version controlling your work looks like. 
 - A few examples of what it looks like to version control comments in Docx files which have been converted to txt or md.
 - [A License for this repository](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/LICENSE)
+- [A TeX file detailing my process in creating this PoC](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/main.tex)
