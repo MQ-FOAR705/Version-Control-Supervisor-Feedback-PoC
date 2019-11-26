@@ -4,7 +4,7 @@ This directory is an example of how a Docx file can be created with modification
 
 This is the initial docx file:
 
-INSERT SCREENSHOT
+![alt text](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/aa/aa.docx-screenshot.png "Docx file after!")
 
 # aa.txt
 
@@ -36,7 +36,7 @@ This is a file I created which contains an additional section.
   
 # aa2.docx
 
-This is what the final docx looks like!
+This is what the second docx file looks like:
 
-INSERT SCREENSHOT
+![alt text](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/aa/aa2.docx-screenshot.png "Docx file after!")
 
