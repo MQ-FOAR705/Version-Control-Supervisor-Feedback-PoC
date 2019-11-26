@@ -10,7 +10,7 @@ This is the initial docx file:
 
 This is the created txt file:
 
-![alt text](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/aa/aa.txt-screenshot.png "Txt file from initial docx file)
+![alt text](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/aa/aa.txt-screenshot.png "Txt file from initial docx file")
 
 
 # aa2.txt
