@@ -19,10 +19,9 @@ where I track the history of changes made based on the comments and feedback.
 
 In this repository you will find:
 
+- [Step-guide.md](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Step-guide.md) - An example of what version controlling files may look like. [Here is where the files are located in this repository](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/PoC-final)
 - [Websites.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Websites.txt) - A file containing a list of websites used in this workflow.
-- [Terminal-commands-Pandoc.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Terminal-commands-Pandoc.txt) - A list of useful commands in macOS terminal for converting documents using Pandoc.
--  [Step-guide.md](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Step-guide.md) - An example of what version controlling files may look like. [Here is where the files are located in this repository](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/PoC-final)
 - [Feedback-test](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/Feedback-test) is a directory where I have two TeX files and a docx file which I converted via Pandoc for version control purposes.
-- A few examples of what it looks like to version control comments in Docx files which have been converted to txt or md.
+- [Terminal-commands-Pandoc.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Terminal-commands-Pandoc.txt) - A list of useful commands in macOS terminal for converting documents using Pandoc.
 - [A License for this repository](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/LICENSE)
 - [A TeX file detailing my process in creating this PoC](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/main.tex)
