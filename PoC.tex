@@ -38,7 +38,7 @@ This document is my new PoC. My plan is to create a workflow which allows me to 
 
 I need to:
 \begin{itemize}
-    \item Have the meeting with my supervisor and record their feedback on my progress or have them send feedback in a Docx file.
+    \item Have the meeting with my supervisor and record their feedback on my progress or have them send feedback in a docx file.
     \item Make sure I record important actionable feedback in such a way that it is easily understood by myself and them at a later date.
     \item Save the feedback in a version controlled format which I will not lose even if my computer crashes.
     \item Implement their feedback and record it precisely so that I can demonstrate that I have met their demands/suggestions.
@@ -222,7 +222,7 @@ GitHub was used by us in class from the beginning of semester for our version co
 \subsubsection{Comments in Word}
 
 \begin{itemize}
-    \item As a researcher I want to be able to send and receive feedback in Docx file format and verion control the comments from my supervisor.
+    \item As a researcher I want to be able to send and receive feedback in docx file format and version control the comments from my supervisor.
 \end{itemize}
 
 \subsubsection{Acceptance Criteria}
@@ -230,15 +230,15 @@ GitHub was used by us in class from the beginning of semester for our version co
 As a research student I should be able to:
 
 \begin{enumerate}
-    \item Receive a Docx document which contains feedback on my work from my supervisor.
-    \item Convert the Docx document to a non-binary file format (eg txt or md) which I can easily manipulate on terminal, Git and GitHub.
+    \item Receive a docx document which contains feedback on my work from my supervisor.
+    \item Convert the docx document to a non-binary file format (eg txt or md) which I can easily manipulate on terminal, Git and GitHub.
     \item Synchronise both the Docx file and the non-binary file to a local Git repository.
     \item Synchronise the local repository to a GitHub repository.
 \end{enumerate}
 
 \section{Implementation}
 
-The implementation of this PoC can be found \href{https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC}{in this repository on GitHub}
+I have chosen to focus mostly on the docx to txt conversion via Panoc and version controlling it on GitHub. The implementation of this PoC can be found \href{https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC}{in this repository on GitHub}
 
 \subsection{Using Pandoc in terminal}
 
@@ -247,17 +247,15 @@ The implementation of this PoC can be found \href{https://github.com/MQ-FOAR705/
     \item I was also able to use Pandoc and macOS text editor in such a way that I could modify a txt file and then convert it to docx format and create comments in this fashion. \href{https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/aa}{This directory} in the repository contains files which I created and manipulated in just this manner. Read the file \href{https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/aa/Contents.md}{Contents.md} for an example of what the process would look like. The file contains four screenshots. The first is an initial docx file, the two in the middle are txt files which show the edits I make between, and the final screenshot is the output docx file with the additions to the original content.
 \end{itemize}
 
-\subsection{Using Git}
+\subsection{Using Git \& GitHub}
 
-\begin{itemize}
-    \item 
-\end{itemize}
+I have written a document which details the steps I took in using Git and GitHub with Pandoc and terminal on macOS. \href{https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Step-guide.md}{This} link will take you to the document. Section 4 and 5 in that document has instructions for using Git and GitHub with terminal and in GUI.
 
 \section{Disaster recovery plan}
 
 \begin{itemize}
     \item With the exception of Microsoft Word, all of the programs involved in this PoC are all open source. All of the programs involved in this PoC are downloadable should any one or all of them malfunction.
-    \item The repository which contains the information for this PoC is stored in five locations. Two are local: On my laptop, and on an external hard disk back up. The other three locations are online: On the GitHub website, on the Overleaf website, and on \href{https://cloudstor.aarnet.edu.au/plus/apps/files/?dir=/PoC-2019/Version-Control-Supervisor-Feedback-PoC&fileid=3988737450}{Cloudstor}.
+    \item The repository which contains the information for this PoC is stored in five locations. Two are local: On my laptop, and on an external hard disk back up. The other three locations are online: On the GitHub website in a \href{https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC}{repository}, in an \href{https://www.overleaf.com/project/5dc25fe708305a00018fcaec}{account on the Overleaf website}, and in an \href{https://cloudstor.aarnet.edu.au/plus/apps/files/?dir=/PoC-2019/Version-Control-Supervisor-Feedback-PoC&fileid=3988737450}{account on Cloudstor}.
 \end{itemize}
 
 \end{document}
