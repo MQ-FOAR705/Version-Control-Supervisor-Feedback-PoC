@@ -48,4 +48,3 @@ This file details a test run I did going from no files or directories locally to
 # Future additions
 
 - I would like to figure out a way to make the output from docx to txt files look easier to follow and easier to edit. A more intuitive layout of the in-body text and comments would make going back and forth between docx and txt easier.
-- 
