@@ -8,7 +8,7 @@ This is the initial docx file:
 
 Using pandoc in terminal with the command:
 
-> pandoc --track-changes=all aa.docx -o aa.txt
+	pandoc --track-changes=all aa.docx -o aa.txt
 
 Created aa.txt
 
@@ -28,7 +28,7 @@ This is a file I created which contains an additional section.
 
 Using pandoc in terminal with the command:
 
-> pandoc --track-changes=all aa2.txt -o aa2.docx
+	pandoc --track-changes=all aa2.txt -o aa2.docx
 
 Created aa2.docx
   
