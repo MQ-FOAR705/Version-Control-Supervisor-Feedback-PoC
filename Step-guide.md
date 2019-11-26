@@ -97,6 +97,8 @@ To convert from txt to docx and retain the in body and comment edits, run this c
 
 	pandoc --track-changes=all example.txt -o example.docx
 
+To see an example of an original Docx which I then converted to txt, modified in txt and then converted back to Docx go to [aa](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/aa)
+
 
 ## 4. Local version control
 
