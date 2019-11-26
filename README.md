@@ -40,6 +40,6 @@ For this process you will need:
 
 This file details a test run I did going from no files or directories locally to eventually having local and online version controlled respositories with one Docx file and one txt file which I converted using Pandoc.
 
-## 3. Open the directory [aa]((https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/aa) and look at the files in there.
+## 3. Open the directory [aa](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/aa) and look at the files in there.
 
 - Read Contents.md. This file contains a few screenshots which outline the process of creating a docx file from a txt file which contains information for adding comments in docx format.
