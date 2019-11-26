@@ -21,3 +21,15 @@ In this repository you will find:
 - [Terminal-commands-Pandoc.txt](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Terminal-commands-Pandoc.txt) - A list of useful commands in macOS terminal for converting documents using Pandoc.
 - [A License for this repository](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/LICENSE)
 - [A TeX file detailing my process in creating this PoC](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/main.tex)
+
+# How to set up for this PoC
+
+*I assume you are already working with Docx files in some stage of your workflow.*
+
+For this process you will need:
+
+- Access to terminal on macOS. This will also work on Windows.
+- [Pandoc](https://pandoc.org/installing.html) downloaded and installed.
+- [Git](https://git-scm.com/downloads) downloaded and installed.
+- A [GitHub](https://github.com/) account.
+
