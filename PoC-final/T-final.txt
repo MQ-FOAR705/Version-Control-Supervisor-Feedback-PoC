@@ -1,0 +1,11 @@
+[This is the first comment in T-final.]{.comment-start id="0"
+author="Jeremy Amin" date="2019-11-19T13:45:00Z"}This is the first
+sentence written in T-final body.[]{.comment-end id="0"}[This is the
+second comment in T-final.]{.comment-start id="1" author="Jeremy Amin"
+date="2019-11-19T13:46:00Z"}This is the second sentence in
+T-final.[]{.comment-end id="1"}
+
+[This is a third comment attached to the third sentence of
+T-final.]{.comment-start id="2" author="Jeremy Amin"
+date="2019-11-19T19:50:00Z"}This is a third sentence added to T-final
+body.[]{.comment-end id="2"}
