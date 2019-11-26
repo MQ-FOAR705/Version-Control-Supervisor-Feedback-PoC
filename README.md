@@ -22,7 +22,9 @@ In this repository you will find:
 - [A License for this repository](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/LICENSE)
 - [A TeX file detailing my process in creating this PoC](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/main.tex)
 
-# How to set up for this PoC
+# How to use this repository
+
+## 1. Programs and websites for this PoC
 
 *I assume you are already working with Docx files in some stage of your workflow.*
 
@@ -32,4 +34,8 @@ For this process you will need:
 - [Pandoc](https://pandoc.org/installing.html) downloaded and installed.
 - [Git](https://git-scm.com/downloads) downloaded and installed.
 - A [GitHub](https://github.com/) account.
+
+## 2. Open the file [Step-guide.md](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/Step-guide.md) and work through the steps I laid out.
+
+This file details a test run I did going from no files or directories locally to eventually having local and online version controlled respositories with one Docx file and one txt file which I converted using Pandoc.
 
