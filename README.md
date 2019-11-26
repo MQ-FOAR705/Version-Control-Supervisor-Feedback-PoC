@@ -43,3 +43,9 @@ This file details a test run I did going from no files or directories locally to
 ## 3. Open the directory [aa](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/aa) and look at the files in there.
 
 - Read Contents.md. This file contains a few screenshots which outline the process of creating a docx file from a txt file which contains information for adding comments in docx format.
+
+
+# Future additions
+
+- I would like to figure out a way to make the output from docx to txt files look easier to follow and easier to edit. A more intuitive layout of the in-body text and comments would make going back and forth between docx and txt easier.
+- 
