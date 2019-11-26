@@ -1,4 +1,4 @@
-This is an example of a step by step process going from not having any folders or files to connecting a created directory and the files it contains to GitHub in such a way that there is the option to version control Docx feedback in both binary and text formats. This is how I did it on a test run. The files created for this run can be found here https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/PoC-final:
+This is an example of a step by step process going from not having any folders or files to connecting a created directory and the files it contains to GitHub in such a way that there is the option to version control Docx feedback in both binary and text formats. This is how I did it on a test run. The files created for this run can be found [here](https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/tree/master/PoC-final):
 
 ## 1. Making a directory and docx file.
 
