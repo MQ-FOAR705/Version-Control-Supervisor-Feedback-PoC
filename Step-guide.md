@@ -76,16 +76,20 @@ Note the timestamp for the first comment I made:
 
 	"2019-11-19T13:45:00Z"
 
+So the comment was made on the 19th of NOV at 1:45 PM
+
 And this is the information for the in-document text:
 
 	This is the first
 	sentence written in T-final body.[]{.comment-end id="0"}
 
-Again, note the timestamp for the second comment I made:
+Note the timestamp for the second comment I made attached to the second sentence:
 
 	"2019-11-19T13:46:00Z"
 
-The result of this is that the txt file has the information of what and when the comment was made.
+The comment was made on the 19th of NOV at 1:46 PM
+
+The result of this is that the txt file has the information of what and when the comment was made. Two different time stamps for comments made in Words which I can track in txt format!
 
 I can cycle steps 2 and 3 any number of times I wish. Editing the docx in Word, and then converting to txt with the Pandoc command which retains the comment changes made, and so on. There is also a way to edit the txt file and then convert it back to docx! Simply writing in the square brackets which represent the in-body text in the docx will add those edits. Writing in the square brackets which represent the comments will add those to the comments in the docx when converted.
 
