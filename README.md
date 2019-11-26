@@ -31,7 +31,7 @@ In this repository you will find:
 
 For this process you will need:
 
-- Access to terminal on macOS. This will also work on Windows.
+- Access to terminal on macOS. For Windows use Git BASH, it will come with Git when GIt is downloaded for Windows.
 - [Pandoc](https://pandoc.org/installing.html) downloaded and installed.
 - [Git](https://git-scm.com/downloads) downloaded and installed.
 - A [GitHub](https://github.com/) account.
